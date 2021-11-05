@@ -1,0 +1,15 @@
+.element-input {
+    color: RGB(var(--font-alt));
+    background-color: RGB(var(--secondary));
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    transition: var(--default-transition);
+    width: 100%;
+    
+    &:focus, &:hover {
+        color: RGB(var(--font))
+    }
+}

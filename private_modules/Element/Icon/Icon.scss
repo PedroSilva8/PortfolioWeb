@@ -1,0 +1,41 @@
+.element-icon {
+    padding: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--default-transition);
+    user-select: none;
+}
+
+.element-icon-round:hover {
+    background-color: RGB(var(--secondary));
+    cursor: pointer;
+    border-radius: 19px;
+}
+
+.element-icon-square:hover {
+    background-color: RGB(var(--secondary));
+    cursor: pointer;
+}
+
+.element-icon-round-square:hover {
+    background-color: RGB(var(--secondary));
+    cursor: pointer;
+    border-radius: 9.5px;
+}
+
+.element-icon-hold-round {
+    background-color: RGB(var(--secondary));
+    border-radius: 19px;
+}
+
+.element-icon-hold-square {
+    background-color: RGB(var(--secondary));
+}
+
+.element-icon-hold-round-square {
+    background-color: RGB(var(--secondary));
+    border-radius: 9.5px;
+}

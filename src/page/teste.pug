@@ -1,0 +1,10 @@
+- var cubes = 128
+.container
+  .perspective
+   - for (var i = 1; i < (cubes+1);i++)
+     .translate-cube-shadow
+       .cube-shadow(id='cube-shadow-'+i)
+     .cube(id='cube-'+i)
+       .top
+       .left
+       .right

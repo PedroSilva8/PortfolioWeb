@@ -1,0 +1,4 @@
+{ 
+    "plugins": [ "react-pug"], 
+    "extends": [ "plugin:react-pug/all" ] 
+}

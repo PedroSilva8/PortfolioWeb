@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    background-color: RGB(var(--background));
+    box-shadow: 0 0 8px RGB(var(--primary-alt));
+
+    border-radius: 10px;
+    margin: 5px 15px;
+    padding: 20px;
+    width: 180px;
+    max-width: 180px;
+
+    > .card-title {
+        user-select: none;
+        align-self: center;
+        justify-self: center;
+        
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    > .element-icon {
+        align-self: center;
+        justify-self: center;
+        padding-bottom: 10px;
+
+        > span {
+            font-size: 60px;
+        }
+    }
+
+    > .card-content {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

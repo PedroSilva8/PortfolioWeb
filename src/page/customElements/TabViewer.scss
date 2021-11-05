@@ -1,0 +1,37 @@
+.tab-viewer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    > .tab-buttons {
+        display: flex;
+        flex-direction: row;
+        
+        > .tab-button {
+            user-select: none;
+            text-align: center;
+            flex-grow: 1;
+            
+            min-width: 75px;
+            padding: 10px 10px;
+
+            transition: var(--default-transition);
+
+            color: RGB(var(--font));
+            /* Bad way to do theming but since this is a custom element only for this project it will stay */
+            background-color: RGB(var(--background));
+            border-bottom: 2px solid transparent;
+            
+            &.tab-active, &:hover {
+                cursor: pointer;
+                border-bottom: 2px solid RGB(var(--secondary)); 
+            }
+        }
+    }
+
+    > .tab-panel {
+        padding: 10px;
+        background-color: RGB(var(--primary));
+    }
+}

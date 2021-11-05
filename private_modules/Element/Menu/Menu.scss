@@ -1,0 +1,46 @@
+.element-menu {
+    display: flex;
+    position: absolute;
+    font-size: 2em;
+    background-color: RGB(var(--background));
+    color: RGB(var(--font));
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: 2px solid RGB(var(--secondary));
+
+    > img {
+        margin-left: 1%;
+        width: 24px;
+        user-select: none;
+    }
+    
+    > h3 {
+        font-size: 25px;
+        margin-left: 5px;
+        letter-spacing: 5px;
+        user-select: none;
+    }
+
+    > hr {
+        width: 30px;
+        margin: 10px 0px;
+        color: RGB(var(--primary-alt));
+        border: solid;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+    }
+
+    .hamburger-react {
+        position: absolute!important;
+    }
+
+    > .element-menu-buttons { 
+        display: flex;
+        flex-grow: 1;
+        
+        > * {
+            margin: 5px;
+        }
+    }
+}

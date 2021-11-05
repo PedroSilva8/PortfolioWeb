@@ -1,0 +1,120 @@
+a {
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    color: RGB(var(--font));
+
+    > #top-content {
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        user-select: none;
+
+        > #top-text {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(0%, -50%);
+            color: RGB(var(--font));
+            user-select: none;
+
+            > h2 {
+                margin: 0px;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 200;
+                color: RGB(var(--secondary));
+            }
+
+            > h1 {
+                margin: 0px;
+                font-size: 70px;
+            }
+        }
+
+        > img {
+            height: 100%;
+            float: right;
+        }
+    }
+
+    > #middle-content-who, #middle-content-time {
+        padding: 20px 5%;
+        background-color: RGB(var(--surface));
+        display: flex;
+        flex-direction: row;
+
+        > div[data-left] {
+            width: 50%;
+            padding: 10px;
+        }
+
+        > div[data-right] {
+            padding: 10px;
+            width: 50%;
+        }
+    }
+
+    > #middle-content-projects {
+        padding: 20px 5%;
+        background-color: RGB(var(--surface));
+        display: flex;
+        flex-direction: row;
+
+        div[data-content] {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            > div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+#langPanel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    
+    .card {
+        width: 240px;
+        max-width: 240px;
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+}
+
+#codePanel {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: RGB(var(--secondary));
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: RGB(var(--secondary-alt));
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}

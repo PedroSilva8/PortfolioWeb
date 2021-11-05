@@ -1,0 +1,26 @@
+.element-tree-view {
+    background-color: RGB(var(--primary));
+    height: calc(100% - 5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    transition: var(--default-transition);
+
+    > .element-search-area {
+        width: 80%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    > hr {
+        width: 85%;
+        margin: 10px 0px;
+        color: RGB(var(--primary-alt));
+        border: solid;
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+    }
+}
