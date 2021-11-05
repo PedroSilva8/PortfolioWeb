@@ -79,6 +79,7 @@ export default class IndexPage extends React.Component<IndexPageProps, IndexPage
                                     Hi! My name is Pedro I'm a { this.getYearSinceDate("10/07/2002") } full-stack developer. 
                                     I started programing { this.getYearSinceDate("10/07/2014") } years ago when I joined <a target='_blank' href='https://www.coderdojo-lx.pt/'>CoderDojo LX</a><br/>
                                     Most programming-related skills I have learned have been from self-research. I was born on 10/07/2002 in Lisbon, I'm a Portuguese citizen and currently live in Lisbon.
+                                     I'm always open to learning about new technologies.
                                 </span>
                             </ProfileCard>
                         </div>
