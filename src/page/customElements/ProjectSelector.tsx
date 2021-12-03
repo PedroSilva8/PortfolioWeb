@@ -22,11 +22,11 @@ export default class ProjectSelector extends React.Component<IProjectSelectorPro
 
     render() {
         return (
-            <div className="ProjectSelector">
+            <div onClick={() => window.open(this.props.link, '_blank')} className="ProjectSelector">
                 <img src={this.props.image}/>
                 <div id='overlay'>
                     { this.props.link ? 
-                        <a target="_blank" href={ this.props.link }>{ this.props.text }</a> : 
+                        <a>{ this.props.text }</a> : 
                         <div>{this.props.text}</div> 
                     }
                 </div>
