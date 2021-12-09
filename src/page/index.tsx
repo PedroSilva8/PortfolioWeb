@@ -149,9 +149,9 @@ export default class IndexPage extends React.Component<IndexPageProps, IndexPage
                                 cardForeColor: ThemeHandler.Font()
                             }}>
                                 { this.state.timelineItems.map((val, index) => 
-                                    <div key={index}>
-                                        <div style={{fontSize: 30, fontWeight: 'bold'}} dangerouslySetInnerHTML={{__html: (val.cardTitle ? val.cardTitle : "")}}></div>
-                                        <div style={{fontSize: 15}} dangerouslySetInnerHTML={{__html: (val.cardSubtitle ? val.cardSubtitle : "")}}></div>
+                                    <div key={index} id="chrono-item">
+                                        <div id="Title" style={{fontWeight: 'bold'}} dangerouslySetInnerHTML={{__html: (val.cardTitle ? val.cardTitle : "")}}></div>
+                                        <div id="Desc" dangerouslySetInnerHTML={{__html: (val.cardSubtitle ? val.cardSubtitle : "")}}></div>
                                     </div>
                                 )}
                             </Chrono>

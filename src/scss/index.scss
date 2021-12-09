@@ -141,3 +141,29 @@ a {
     border-radius: 0px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
+
+#chrono-item {
+    > #Title {
+        font-size: 30px;
+    }
+
+    > #Desc {
+        font-size: 15px;
+    }
+
+    @media (max-width: 625px) {
+        > #Title {
+            font-size: 15px;
+        }
+
+        > #Desc {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        > #Desc {
+            line-height: 20px;
+        }
+    }
+}
